@@ -4,9 +4,9 @@ Every moderator ([`Helper` and higher](../roles.md)) can access the "Manage (Mod
 
 The panel has a few sub-tabs:
 
-- [Info](./info.md)
-- [Badges](./badges.md)
-- [Password](./password.md)
-- [Sessions](./sessions.md)
-- [Chats](./chats.md)
-- [Warnings](./warnings.md)
+- [Info](./panel/info.md)
+- [Badges](./panel/badges.md)
+- [Password](./panel/password.md)
+- [Sessions](./panel/sessions.md)
+- [Chats](./panel/chats.md)
+- [Warnings](./panel/warnings.md)
