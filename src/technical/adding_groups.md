@@ -8,14 +8,32 @@ This chapter will walk through what each line of that file does, and how you can
 
 ---
 
-In the start of the file, we create two groups:
+In the start of the file, we create three groups:
 
 ```sql
-INSERT INTO "xgroups" VALUES ('Moderators', '1', '["Helper"]');
-INSERT INTO "xgroups" VALUES ('Admins', '2', '["Helper","Manager"]');
+-- the minimum value for helpers is:
+-- (1 << 2) | (1 << 3) | (1 << 4) | (1 << 14) | (1 << 15) | (1 << 25)
+INSERT INTO
+    "xgroups"
+VALUES
+    ('Helpers', '1', 33603612);
+
+-- the minimum value for managers is:
+-- (1 << 2) | (1 << 3) | (1 << 4) | (1 << 10) | (1 << 11) | (1 << 13) | (1 << 14) | (1 << 15) | (1 << 23) | (1 << 25)
+INSERT INTO
+    "xgroups"
+VALUES
+    ('Managers', '2', 42003484);
+
+-- admins are granted administrator permissions:
+-- (1 << 0) | (1 << 1)
+INSERT INTO
+    "xgroups"
+VALUES
+    ('Admins', '3', 3);
 ```
 
-The first line creates a group named "Moderators" with an ID of `1` and _just_ the `Helper` [role](../staff/roles.md). You can change the ID of the group to anything, as long as it's a number.
+These groups are created using [bitflag permissions](./permissions.md).
 
 The name and ID of a group **must** be unique to the group, but the roles can be shared with any group.
 

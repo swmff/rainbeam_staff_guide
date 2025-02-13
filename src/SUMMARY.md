@@ -4,11 +4,11 @@
 
 # Technical Guide
 
+- [Permissions](./technical/permissions.md)
 - [Adding groups](./technical/adding_groups.md)
 
 # Staff Guide
 
-- [Roles](./staff/roles.md)
 - [Mod panel](./staff/panel.md)
     - [Info tab](./staff/panel/info.md)
     - [Badges tab](./staff/panel/badges.md)
