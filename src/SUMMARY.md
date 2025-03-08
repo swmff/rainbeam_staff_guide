@@ -15,6 +15,7 @@
     - [Password tab](./staff/panel/password.md)
     - [Sessions tab](./staff/panel/sessions.md)
     - [Chats tab](./staff/panel/chats.md)
+    - [Labels tab](./staff/panel/labels.md)
     - [Warnings tab](./staff/panel/warnings.md)
 - [Inboxes](./staff/inboxes.md)
     - [Audit log](./staff/inboxes/audit.md)
